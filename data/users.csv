@@ -1,0 +1,201 @@
+user_id,name,department,role,staff_type,manager,status,join_date
+USR-1001,John Rao,Radiology,Doctor,Outsourced Technician,Dr. Anita Desai,INACTIVE,2023-12-27
+USR-1002,Sarah Davis,ICU,Nurse,Outsourced Technician,Dr. Rajesh Sharma,INACTIVE,2024-05-09
+USR-1003,Deepak Martinez,HR,Doctor,Permanent Staff,Dr. Anita Desai,ACTIVE,2024-06-24
+USR-1004,Jessica Sharma,HR,Consultant,Visiting Consultant,Dr. Suresh Menon,ACTIVE,2024-04-21
+USR-1005,Michael Smith,HR,Nurse,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2024-08-31
+USR-1006,Divya Kumar,Emergency,Doctor,Outsourced Technician,Manager Sunita Rao,INACTIVE,2024-07-10
+USR-1007,James Martinez,Emergency,Radiology Technician,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2025-11-13
+USR-1008,Meera Patel,Emergency,Intern,Intern,Manager Sunita Rao,ACTIVE,2025-06-25
+USR-1009,James Johnson,Billing,Consultant,Visiting Consultant,Dr. Suresh Menon,ACTIVE,2024-06-13
+USR-1010,David Patel,Radiology,Consultant,Visiting Consultant,Dr. Anita Desai,ACTIVE,2024-06-16
+USR-1011,Stephanie Davis,Billing,Intern,Intern,Dr. Rajesh Sharma,ACTIVE,2023-10-16
+USR-1012,Jessica Smith,Emergency,Pharmacist,Outsourced Technician,Dr. Anita Desai,ACTIVE,2025-04-16
+USR-1013,Robert Smith,Administration,Intern,Intern,Manager Sunita Rao,ACTIVE,2025-07-03
+USR-1014,Karan Gupta,Radiology,Lab Technician,Permanent Staff,Dr. Paul Walker,ACTIVE,2025-10-17
+USR-1015,Nikhil Brown,Radiology,Pharmacist,Outsourced Technician,Dr. Anita Desai,ACTIVE,2023-12-16
+USR-1016,Michael Verma,Pharmacy,Nurse,Permanent Staff,Manager Sunita Rao,ACTIVE,2024-10-12
+USR-1017,Amit Martinez,ICU,Billing Staff,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2025-03-16
+USR-1018,Michael Kumar,Laboratory,Radiology Technician,Permanent Staff,Manager Sunita Rao,ACTIVE,2023-09-17
+USR-1019,Emily Kumar,Emergency,Consultant,Visiting Consultant,Dr. Suresh Menon,ACTIVE,2025-02-14
+USR-1020,Divya Reddy,Billing,Consultant,Visiting Consultant,Dr. Anita Desai,ACTIVE,2025-11-19
+USR-1021,Stephanie Miller,Administration,Doctor,Outsourced Technician,Dr. Rajesh Sharma,INACTIVE,2024-09-19
+USR-1022,Robert Joshi,ICU,Intern,Intern,Dr. Anita Desai,ACTIVE,2026-05-10
+USR-1023,Rohan Patel,Pharmacy,Billing Staff,Permanent Staff,Dr. Anita Desai,ACTIVE,2026-05-10
+USR-1024,Swati Nair,Radiology,Lab Technician,Outsourced Technician,Dr. Paul Walker,ACTIVE,2025-08-20
+USR-1025,Arjun Joshi,Administration,Pharmacist,Outsourced Technician,Dr. Paul Walker,ACTIVE,2024-05-24
+USR-1026,Kavya Patel,Radiology,Radiology Technician,Permanent Staff,Dr. Paul Walker,ACTIVE,2023-11-25
+USR-1027,David Verma,Emergency,Intern,Intern,Dr. Rajesh Sharma,ACTIVE,2023-11-25
+USR-1028,Deepak Singh,Radiology,Lab Technician,Outsourced Technician,Dr. Paul Walker,INACTIVE,2026-04-28
+USR-1029,Robert Rodriguez,Administration,Billing Staff,Permanent Staff,Manager Sunita Rao,ACTIVE,2023-12-22
+USR-1030,Sarah Brown,HR,Radiology Technician,Outsourced Technician,Manager Sunita Rao,ACTIVE,2023-11-08
+USR-1031,Sarah Rao,Billing,Doctor,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2024-03-26
+USR-1032,Swati Jones,HR,Consultant,Visiting Consultant,Dr. Anita Desai,ACTIVE,2024-05-26
+USR-1033,Amanda Patel,ICU,Billing Staff,Permanent Staff,Dr. Paul Walker,ACTIVE,2023-12-18
+USR-1034,Stephanie Singh,HR,Consultant,Visiting Consultant,Manager Sunita Rao,ACTIVE,2026-02-15
+USR-1035,Amit Verma,HR,Consultant,Visiting Consultant,Dr. Rajesh Sharma,ACTIVE,2024-06-11
+USR-1036,Stephanie Jones,Administration,Lab Technician,Outsourced Technician,Dr. Anita Desai,ACTIVE,2024-04-23
+USR-1037,Ananya Rodriguez,ICU,Doctor,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2025-02-09
+USR-1038,Stephanie Miller,ICU,Consultant,Visiting Consultant,Dr. Paul Walker,INACTIVE,2024-03-22
+USR-1039,Rohan Martinez,HR,Nurse,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2025-04-19
+USR-1040,Kavya Rodriguez,HR,Doctor,Permanent Staff,Dr. Paul Walker,ACTIVE,2024-08-02
+USR-1041,Stephanie Kumar,Billing,Intern,Intern,Dr. Anita Desai,ACTIVE,2024-01-26
+USR-1042,Sarah Joshi,Emergency,Billing Staff,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2025-04-12
+USR-1043,Priya Patel,Laboratory,Intern,Intern,Dr. Anita Desai,ACTIVE,2026-03-04
+USR-1044,Rohan Singh,Pharmacy,Radiology Technician,Outsourced Technician,Manager Sunita Rao,ACTIVE,2025-09-03
+USR-1045,Meera Martinez,Emergency,Doctor,Outsourced Technician,Dr. Anita Desai,ACTIVE,2026-03-13
+USR-1046,Priya Davis,Laboratory,Consultant,Visiting Consultant,Dr. Suresh Menon,ACTIVE,2025-09-17
+USR-1047,Rahul Reddy,Laboratory,Lab Technician,Outsourced Technician,Dr. Rajesh Sharma,INACTIVE,2024-11-20
+USR-1048,James Kumar,Billing,Doctor,Permanent Staff,Dr. Anita Desai,ACTIVE,2024-06-08
+USR-1049,Neha Jones,Emergency,Pharmacist,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2025-08-21
+USR-1050,Robert Gupta,Pharmacy,Doctor,Outsourced Technician,Manager Sunita Rao,INACTIVE,2024-07-25
+USR-1051,Pooja Verma,Radiology,Radiology Technician,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2025-04-09
+USR-1052,Robert Brown,Radiology,Consultant,Visiting Consultant,Dr. Anita Desai,ACTIVE,2025-12-22
+USR-1053,Neha Brown,Billing,Doctor,Permanent Staff,Manager Sunita Rao,ACTIVE,2026-02-14
+USR-1054,Emily Singh,Emergency,Lab Technician,Permanent Staff,Manager Sunita Rao,ACTIVE,2026-02-09
+USR-1055,Ritu Singh,Administration,Intern,Intern,Dr. Suresh Menon,ACTIVE,2025-12-06
+USR-1056,Amanda Singh,ICU,Intern,Intern,Dr. Anita Desai,ACTIVE,2024-06-25
+USR-1057,Amanda Patel,HR,Lab Technician,Outsourced Technician,Dr. Paul Walker,ACTIVE,2023-10-12
+USR-1058,Priya Kumar,Laboratory,Consultant,Visiting Consultant,Dr. Rajesh Sharma,INACTIVE,2024-12-01
+USR-1059,Pooja Smith,HR,Pharmacist,Permanent Staff,Dr. Paul Walker,ACTIVE,2023-10-29
+USR-1060,David Brown,Billing,Doctor,Permanent Staff,Manager Sunita Rao,INACTIVE,2025-07-25
+USR-1061,Stephanie Smith,Laboratory,Radiology Technician,Permanent Staff,Dr. Paul Walker,ACTIVE,2024-11-05
+USR-1062,Rahul Williams,Radiology,Lab Technician,Permanent Staff,Manager Sunita Rao,ACTIVE,2024-10-06
+USR-1063,Sarah Nair,ICU,Lab Technician,Outsourced Technician,Dr. Suresh Menon,ACTIVE,2024-11-27
+USR-1064,Jessica Rodriguez,Administration,Radiology Technician,Outsourced Technician,Manager Sunita Rao,ACTIVE,2025-02-18
+USR-1065,Ritu Nair,Billing,Nurse,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2025-10-22
+USR-1066,Kavya Joshi,Radiology,Intern,Intern,Dr. Anita Desai,INACTIVE,2024-05-21
+USR-1067,Ritu Martinez,HR,Nurse,Outsourced Technician,Dr. Paul Walker,ACTIVE,2025-08-27
+USR-1068,Amit Garcia,Pharmacy,Pharmacist,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2026-02-11
+USR-1069,Michael Rao,Pharmacy,Pharmacist,Permanent Staff,Dr. Paul Walker,ACTIVE,2025-04-06
+USR-1070,Kavya Rao,Administration,Billing Staff,Permanent Staff,Dr. Paul Walker,ACTIVE,2025-05-15
+USR-1071,Rahul Jones,Pharmacy,Pharmacist,Outsourced Technician,Manager Sunita Rao,ACTIVE,2025-10-22
+USR-1072,Kavya Kumar,Laboratory,Billing Staff,Permanent Staff,Manager Sunita Rao,INACTIVE,2024-07-02
+USR-1073,Kavya Kumar,Emergency,Radiology Technician,Outsourced Technician,Dr. Anita Desai,ACTIVE,2024-10-10
+USR-1074,David Gupta,Emergency,Intern,Intern,Manager Sunita Rao,ACTIVE,2025-03-22
+USR-1075,Karan Brown,HR,Doctor,Permanent Staff,Manager Sunita Rao,ACTIVE,2025-05-04
+USR-1076,David Sharma,ICU,Pharmacist,Outsourced Technician,Dr. Suresh Menon,ACTIVE,2024-10-17
+USR-1077,Amanda Brown,Administration,Intern,Intern,Dr. Anita Desai,ACTIVE,2025-01-23
+USR-1078,Aarav Williams,Pharmacy,Radiology Technician,Outsourced Technician,Manager Sunita Rao,ACTIVE,2025-06-12
+USR-1079,Swati Sharma,Emergency,Pharmacist,Permanent Staff,Manager Sunita Rao,INACTIVE,2024-12-29
+USR-1080,Neha Verma,Billing,Lab Technician,Outsourced Technician,Dr. Anita Desai,ACTIVE,2024-08-24
+USR-1081,Michael Williams,Laboratory,Lab Technician,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2025-10-20
+USR-1082,Swati Verma,Emergency,Radiology Technician,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2026-05-13
+USR-1083,Kavya Reddy,Radiology,Doctor,Permanent Staff,Dr. Anita Desai,ACTIVE,2024-01-09
+USR-1084,Nikhil Reddy,Billing,Billing Staff,Outsourced Technician,Dr. Anita Desai,ACTIVE,2026-05-27
+USR-1085,Emily Rao,Laboratory,Consultant,Visiting Consultant,Dr. Rajesh Sharma,ACTIVE,2026-04-22
+USR-1086,Meera Rodriguez,Radiology,Pharmacist,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2026-01-11
+USR-1087,John Singh,Emergency,Nurse,Outsourced Technician,Dr. Paul Walker,ACTIVE,2024-09-03
+USR-1088,Swati Brown,Billing,Radiology Technician,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2026-01-03
+USR-1089,Ritu Rao,Administration,Pharmacist,Outsourced Technician,Dr. Anita Desai,ACTIVE,2025-10-04
+USR-1090,Deepak Kumar,HR,Billing Staff,Outsourced Technician,Dr. Paul Walker,ACTIVE,2026-02-02
+USR-1091,Kavya Patel,Radiology,Lab Technician,Outsourced Technician,Manager Sunita Rao,ACTIVE,2025-07-29
+USR-1092,Amit Smith,Billing,Doctor,Outsourced Technician,Dr. Anita Desai,ACTIVE,2024-09-11
+USR-1093,Jessica Kumar,Laboratory,Radiology Technician,Outsourced Technician,Dr. Paul Walker,INACTIVE,2026-05-11
+USR-1094,Arjun Patel,HR,Intern,Intern,Manager Sunita Rao,ACTIVE,2024-05-17
+USR-1095,David Garcia,ICU,Billing Staff,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2024-11-01
+USR-1096,David Singh,Administration,Lab Technician,Outsourced Technician,Dr. Paul Walker,ACTIVE,2024-11-22
+USR-1097,Emily Davis,Administration,Radiology Technician,Outsourced Technician,Dr. Suresh Menon,ACTIVE,2024-05-07
+USR-1098,Priya Reddy,Pharmacy,Radiology Technician,Permanent Staff,Dr. Anita Desai,ACTIVE,2025-01-21
+USR-1099,Sanjay Rodriguez,Radiology,Lab Technician,Permanent Staff,Dr. Suresh Menon,ACTIVE,2024-03-15
+USR-1100,Meera Sharma,Laboratory,Consultant,Visiting Consultant,Dr. Rajesh Sharma,ACTIVE,2025-04-02
+USR-1101,Meera Gupta,ICU,Billing Staff,Permanent Staff,Dr. Paul Walker,ACTIVE,2025-01-16
+USR-1102,Karan Smith,ICU,Consultant,Visiting Consultant,Dr. Suresh Menon,ACTIVE,2025-01-15
+USR-1103,Priya Patel,Emergency,Pharmacist,Outsourced Technician,Dr. Paul Walker,ACTIVE,2023-11-07
+USR-1104,Vikram Gupta,Radiology,Lab Technician,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2024-11-13
+USR-1105,Divya Martinez,HR,Intern,Intern,Manager Sunita Rao,ACTIVE,2024-07-14
+USR-1106,Amanda Rodriguez,ICU,Pharmacist,Outsourced Technician,Dr. Paul Walker,ACTIVE,2023-12-24
+USR-1107,Michael Reddy,Laboratory,Intern,Intern,Dr. Rajesh Sharma,ACTIVE,2024-03-09
+USR-1108,Swati Patel,ICU,Consultant,Visiting Consultant,Manager Sunita Rao,ACTIVE,2025-05-14
+USR-1109,Ritu Joshi,Laboratory,Doctor,Permanent Staff,Dr. Suresh Menon,ACTIVE,2024-12-21
+USR-1110,Rohan Singh,HR,Lab Technician,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2025-07-08
+USR-1111,Vikram Kumar,Emergency,Consultant,Visiting Consultant,Dr. Rajesh Sharma,ACTIVE,2024-07-24
+USR-1112,Divya Rodriguez,Emergency,Lab Technician,Outsourced Technician,Manager Sunita Rao,ACTIVE,2025-08-30
+USR-1113,Amit Kumar,Emergency,Billing Staff,Outsourced Technician,Dr. Paul Walker,INACTIVE,2024-11-29
+USR-1114,Emily Smith,Emergency,Lab Technician,Permanent Staff,Dr. Anita Desai,ACTIVE,2026-01-17
+USR-1115,Amanda Rodriguez,ICU,Doctor,Outsourced Technician,Dr. Anita Desai,ACTIVE,2025-07-12
+USR-1116,Karan Kumar,HR,Consultant,Visiting Consultant,Manager Sunita Rao,ACTIVE,2025-01-07
+USR-1117,Pooja Brown,Emergency,Radiology Technician,Outsourced Technician,Dr. Anita Desai,ACTIVE,2025-08-24
+USR-1118,Ritu Joshi,Administration,Pharmacist,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2024-08-10
+USR-1119,Priya Williams,HR,Doctor,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2024-09-18
+USR-1120,Divya Garcia,Radiology,Billing Staff,Permanent Staff,Dr. Suresh Menon,ACTIVE,2026-04-20
+USR-1121,Meera Jones,ICU,Billing Staff,Permanent Staff,Dr. Paul Walker,ACTIVE,2025-09-09
+USR-1122,Neha Joshi,Emergency,Doctor,Outsourced Technician,Dr. Anita Desai,ACTIVE,2026-04-05
+USR-1123,Priya Jones,Administration,Nurse,Permanent Staff,Dr. Suresh Menon,ACTIVE,2024-06-19
+USR-1124,Sneha Garcia,Administration,Billing Staff,Permanent Staff,Dr. Paul Walker,INACTIVE,2024-03-27
+USR-1125,Stephanie Martinez,Emergency,Consultant,Visiting Consultant,Dr. Suresh Menon,ACTIVE,2026-02-04
+USR-1126,Sneha Smith,Laboratory,Lab Technician,Permanent Staff,Dr. Suresh Menon,ACTIVE,2025-04-29
+USR-1127,Sarah Garcia,Administration,Consultant,Visiting Consultant,Dr. Paul Walker,ACTIVE,2024-08-19
+USR-1128,Swati Davis,Billing,Pharmacist,Outsourced Technician,Dr. Anita Desai,ACTIVE,2024-05-15
+USR-1129,Nikhil Williams,HR,Intern,Intern,Dr. Rajesh Sharma,ACTIVE,2025-01-10
+USR-1130,David Williams,Administration,Pharmacist,Permanent Staff,Dr. Rajesh Sharma,INACTIVE,2026-05-29
+USR-1131,Nikhil Smith,Emergency,Nurse,Outsourced Technician,Dr. Paul Walker,ACTIVE,2023-09-29
+USR-1132,Emily Gupta,Emergency,Pharmacist,Permanent Staff,Manager Sunita Rao,ACTIVE,2024-06-11
+USR-1133,Rahul Martinez,Billing,Pharmacist,Permanent Staff,Dr. Paul Walker,ACTIVE,2024-08-03
+USR-1134,John Garcia,Radiology,Doctor,Permanent Staff,Dr. Suresh Menon,ACTIVE,2025-10-17
+USR-1135,Rohan Brown,Administration,Nurse,Permanent Staff,Dr. Anita Desai,ACTIVE,2026-03-27
+USR-1136,Aarav Verma,Laboratory,Radiology Technician,Permanent Staff,Dr. Suresh Menon,ACTIVE,2024-02-10
+USR-1137,Kavya Miller,Pharmacy,Pharmacist,Permanent Staff,Dr. Anita Desai,INACTIVE,2026-02-21
+USR-1138,Amit Martinez,Administration,Intern,Intern,Dr. Paul Walker,INACTIVE,2024-12-29
+USR-1139,John Kumar,ICU,Billing Staff,Outsourced Technician,Manager Sunita Rao,ACTIVE,2025-08-07
+USR-1140,Swati Nair,Billing,Nurse,Outsourced Technician,Dr. Paul Walker,ACTIVE,2026-05-26
+USR-1141,Sneha Kumar,Radiology,Billing Staff,Outsourced Technician,Manager Sunita Rao,ACTIVE,2024-01-01
+USR-1142,Kavya Williams,Laboratory,Radiology Technician,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2025-07-19
+USR-1143,Amit Kumar,Administration,Doctor,Permanent Staff,Dr. Suresh Menon,ACTIVE,2024-05-06
+USR-1144,Divya Johnson,Radiology,Intern,Intern,Dr. Paul Walker,ACTIVE,2025-10-26
+USR-1145,Emily Gupta,Laboratory,Nurse,Permanent Staff,Manager Sunita Rao,INACTIVE,2024-09-21
+USR-1146,Emily Gupta,Billing,Nurse,Outsourced Technician,Manager Sunita Rao,ACTIVE,2024-01-27
+USR-1147,Jessica Davis,Pharmacy,Radiology Technician,Outsourced Technician,Dr. Suresh Menon,ACTIVE,2026-05-07
+USR-1148,Ritu Joshi,Administration,Radiology Technician,Permanent Staff,Dr. Rajesh Sharma,INACTIVE,2026-05-30
+USR-1149,Kavya Williams,HR,Radiology Technician,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2024-01-18
+USR-1150,Karan Johnson,Billing,Lab Technician,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2025-01-08
+USR-1151,Aarav Martinez,Emergency,Radiology Technician,Permanent Staff,Manager Sunita Rao,ACTIVE,2024-07-19
+USR-1152,John Brown,ICU,Nurse,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2025-01-30
+USR-1153,Priya Rao,Pharmacy,Intern,Intern,Manager Sunita Rao,ACTIVE,2025-07-31
+USR-1154,Emily Davis,HR,Pharmacist,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2025-06-05
+USR-1155,Sneha Kumar,Radiology,Doctor,Outsourced Technician,Manager Sunita Rao,ACTIVE,2024-05-12
+USR-1156,Amanda Johnson,Billing,Nurse,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2024-03-26
+USR-1157,Priya Jones,ICU,Nurse,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2024-05-20
+USR-1158,Vikram Rodriguez,Emergency,Intern,Intern,Dr. Paul Walker,ACTIVE,2024-04-22
+USR-1159,James Singh,ICU,Radiology Technician,Permanent Staff,Dr. Suresh Menon,ACTIVE,2024-02-09
+USR-1160,Vikram Davis,Emergency,Lab Technician,Permanent Staff,Dr. Rajesh Sharma,INACTIVE,2024-09-14
+USR-1161,Jessica Singh,Pharmacy,Radiology Technician,Permanent Staff,Dr. Suresh Menon,INACTIVE,2025-10-12
+USR-1162,Sneha Miller,Administration,Nurse,Permanent Staff,Manager Sunita Rao,ACTIVE,2025-02-20
+USR-1163,Nikhil Rao,ICU,Billing Staff,Permanent Staff,Dr. Paul Walker,ACTIVE,2025-07-03
+USR-1164,Aarav Verma,HR,Billing Staff,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2026-04-02
+USR-1165,Karan Patel,Pharmacy,Nurse,Outsourced Technician,Dr. Rajesh Sharma,INACTIVE,2025-06-14
+USR-1166,John Rodriguez,Laboratory,Radiology Technician,Outsourced Technician,Manager Sunita Rao,ACTIVE,2024-11-27
+USR-1167,Priya Rao,HR,Intern,Intern,Manager Sunita Rao,ACTIVE,2024-11-10
+USR-1168,Rahul Jones,Emergency,Pharmacist,Outsourced Technician,Dr. Suresh Menon,ACTIVE,2025-07-26
+USR-1169,Sanjay Johnson,Administration,Consultant,Visiting Consultant,Dr. Rajesh Sharma,INACTIVE,2023-12-10
+USR-1170,Rohan Brown,Pharmacy,Nurse,Outsourced Technician,Dr. Paul Walker,INACTIVE,2026-05-20
+USR-1171,Swati Davis,HR,Radiology Technician,Permanent Staff,Dr. Suresh Menon,ACTIVE,2026-05-04
+USR-1172,Michael Brown,Laboratory,Doctor,Outsourced Technician,Dr. Suresh Menon,INACTIVE,2025-02-14
+USR-1173,Arjun Gupta,Emergency,Billing Staff,Permanent Staff,Dr. Suresh Menon,ACTIVE,2024-09-24
+USR-1174,Priya Kumar,HR,Intern,Intern,Dr. Paul Walker,ACTIVE,2025-12-30
+USR-1175,Divya Martinez,ICU,Doctor,Outsourced Technician,Dr. Anita Desai,ACTIVE,2025-11-02
+USR-1176,Meera Smith,Pharmacy,Radiology Technician,Permanent Staff,Dr. Anita Desai,ACTIVE,2024-10-28
+USR-1177,Rohan Gupta,Radiology,Doctor,Permanent Staff,Manager Sunita Rao,ACTIVE,2024-08-28
+USR-1178,Neha Johnson,Emergency,Lab Technician,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2025-10-25
+USR-1179,Divya Verma,Administration,Nurse,Outsourced Technician,Manager Sunita Rao,ACTIVE,2024-12-09
+USR-1180,Sneha Kumar,Emergency,Intern,Intern,Dr. Suresh Menon,ACTIVE,2024-06-30
+USR-1181,Sarah Rodriguez,ICU,Billing Staff,Outsourced Technician,Dr. Anita Desai,ACTIVE,2025-05-19
+USR-1182,Ananya Sharma,Laboratory,Intern,Intern,Dr. Anita Desai,ACTIVE,2025-11-04
+USR-1183,Sanjay Joshi,ICU,Radiology Technician,Permanent Staff,Manager Sunita Rao,ACTIVE,2024-03-11
+USR-1184,Vikram Williams,Billing,Intern,Intern,Dr. Rajesh Sharma,ACTIVE,2025-10-12
+USR-1185,Ananya Brown,Emergency,Doctor,Outsourced Technician,Dr. Suresh Menon,ACTIVE,2025-04-23
+USR-1186,Amit Brown,HR,Lab Technician,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2024-03-07
+USR-1187,Jessica Martinez,Emergency,Billing Staff,Outsourced Technician,Manager Sunita Rao,ACTIVE,2024-05-20
+USR-1188,Sneha Rodriguez,HR,Pharmacist,Permanent Staff,Dr. Suresh Menon,ACTIVE,2024-04-27
+USR-1189,Rahul Nair,Radiology,Nurse,Permanent Staff,Dr. Suresh Menon,ACTIVE,2026-05-22
+USR-1190,James Gupta,Emergency,Intern,Intern,Dr. Anita Desai,ACTIVE,2024-03-09
+USR-1191,Divya Gupta,Administration,Nurse,Permanent Staff,Manager Sunita Rao,ACTIVE,2025-10-31
+USR-1192,Nikhil Jones,Pharmacy,Radiology Technician,Outsourced Technician,Manager Sunita Rao,INACTIVE,2024-12-09
+USR-1193,John Joshi,Billing,Lab Technician,Permanent Staff,Dr. Paul Walker,INACTIVE,2024-12-29
+USR-1194,Karan Verma,Laboratory,Doctor,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2026-02-05
+USR-1195,Rohan Martinez,ICU,Pharmacist,Outsourced Technician,Manager Sunita Rao,ACTIVE,2025-04-21
+USR-1196,John Reddy,Pharmacy,Radiology Technician,Outsourced Technician,Dr. Rajesh Sharma,ACTIVE,2025-12-22
+USR-1197,Robert Smith,ICU,Nurse,Permanent Staff,Dr. Anita Desai,ACTIVE,2024-12-06
+USR-1198,Deepak Miller,Billing,Consultant,Visiting Consultant,Dr. Suresh Menon,ACTIVE,2024-10-14
+USR-1199,Sneha Smith,Emergency,Doctor,Outsourced Technician,Dr. Suresh Menon,INACTIVE,2025-08-08
+USR-1200,Amit Joshi,Billing,Lab Technician,Permanent Staff,Dr. Rajesh Sharma,ACTIVE,2024-02-05

@@ -1,0 +1,101 @@
+decision_id,user_id,entitlement_id,risk_score,recommendation,reviewer_decision,override,reason,reviewer,decision_timestamp
+DEC-2001,USR-1016,ENT-5050,44,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-07-06 20:45:39
+DEC-2002,USR-1129,ENT-5458,11,APPROVE,APPROVE,False,Standard baseline approval,Reviewer Carol (Access Admin),2026-08-06 20:45:39
+DEC-2003,USR-1050,ENT-5179,64,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-08-20 20:45:39
+DEC-2004,USR-1088,ENT-5321,22,APPROVE,APPROVE,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-08-03 20:45:39
+DEC-2005,USR-1085,ENT-5306,52,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-08-04 20:45:39
+DEC-2006,USR-1018,ENT-5057,80,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-09-02 20:45:39
+DEC-2007,USR-1172,ENT-5618,85,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-08-12 20:45:39
+DEC-2008,USR-1176,ENT-5628,27,APPROVE,APPROVE,False,Standard baseline approval,Reviewer Alice (Security Lead),2026-08-04 20:45:39
+DEC-2009,USR-1044,ENT-5153,45,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-07-17 20:45:39
+DEC-2010,USR-1197,ENT-5694,61,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-07-31 20:45:39
+DEC-2011,USR-1157,ENT-5556,65,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-07-30 20:45:39
+DEC-2012,USR-1068,ENT-5244,84,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-09-01 20:45:39
+DEC-2013,USR-1134,ENT-5479,23,APPROVE,APPROVE,False,Standard baseline approval,Reviewer Carol (Access Admin),2026-07-10 20:45:39
+DEC-2014,USR-1034,ENT-5121,12,APPROVE,APPROVE,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-07-09 20:45:39
+DEC-2015,USR-1065,ENT-5231,84,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-10 20:45:39
+DEC-2016,USR-1178,ENT-5633,66,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Alice (Security Lead),2026-08-28 20:45:39
+DEC-2017,USR-1061,ENT-5218,37,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-08-17 20:45:39
+DEC-2018,USR-1069,ENT-5247,67,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-08-08 20:45:39
+DEC-2019,USR-1034,ENT-5120,55,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-18 20:45:39
+DEC-2020,USR-1135,ENT-5482,10,APPROVE,APPROVE,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-08-29 20:45:39
+DEC-2021,USR-1066,ENT-5236,74,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-09-01 20:45:39
+DEC-2022,USR-1045,ENT-5158,22,APPROVE,APPROVE,False,Standard baseline approval,Reviewer Bob (Compliance Officer),2026-07-22 20:45:39
+DEC-2023,USR-1029,ENT-5101,43,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-07-18 20:45:39
+DEC-2024,USR-1085,ENT-5309,33,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-07-20 20:45:39
+DEC-2025,USR-1167,ENT-5597,57,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-24 20:45:39
+DEC-2026,USR-1104,ENT-5380,83,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-09-01 20:45:39
+DEC-2027,USR-1052,ENT-5183,51,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-09-01 20:45:39
+DEC-2028,USR-1030,ENT-5105,52,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-08-07 20:45:39
+DEC-2029,USR-1087,ENT-5316,83,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-08-19 20:45:39
+DEC-2030,USR-1127,ENT-5452,53,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-08-25 20:45:39
+DEC-2031,USR-1151,ENT-5539,43,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-07-14 20:45:39
+DEC-2032,USR-1166,ENT-5595,65,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-07-11 20:45:39
+DEC-2033,USR-1163,ENT-5578,78,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-07 20:45:39
+DEC-2034,USR-1053,ENT-5186,67,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-08-31 20:45:39
+DEC-2035,USR-1057,ENT-5203,52,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-07-09 20:45:39
+DEC-2036,USR-1121,ENT-5434,40,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-07-09 20:45:39
+DEC-2037,USR-1093,ENT-5339,72,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-08-22 20:45:39
+DEC-2038,USR-1077,ENT-5277,48,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-07-14 20:45:39
+DEC-2039,USR-1178,ENT-5635,62,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-08-18 20:45:39
+DEC-2040,USR-1004,ENT-5013,46,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-07-16 20:45:39
+DEC-2041,USR-1038,ENT-5135,62,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Alice (Security Lead),2026-07-09 20:45:39
+DEC-2042,USR-1012,ENT-5039,59,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-08-01 20:45:39
+DEC-2043,USR-1124,ENT-5444,38,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-07-11 20:45:39
+DEC-2044,USR-1082,ENT-5297,12,APPROVE,APPROVE,False,Aligned with system recommendation,Reviewer Alice (Security Lead),2026-07-10 20:45:39
+DEC-2045,USR-1002,ENT-5006,66,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-08-09 20:45:39
+DEC-2046,USR-1035,ENT-5122,52,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-07-13 20:45:39
+DEC-2047,USR-1036,ENT-5127,36,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-08-15 20:45:39
+DEC-2048,USR-1130,ENT-5464,74,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-08-24 20:45:39
+DEC-2049,USR-1132,ENT-5470,72,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-31 20:45:39
+DEC-2050,USR-1195,ENT-5688,70,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-08-20 20:45:39
+DEC-2051,USR-1102,ENT-5373,51,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-08-30 20:45:39
+DEC-2052,USR-1071,ENT-5255,64,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-08-14 20:45:39
+DEC-2053,USR-1051,ENT-5181,46,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-26 20:45:39
+DEC-2054,USR-1190,ENT-5672,61,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-26 20:45:39
+DEC-2055,USR-1148,ENT-5527,41,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-07-30 20:45:39
+DEC-2056,USR-1148,ENT-5529,29,APPROVE,APPROVE,False,Standard baseline approval,Reviewer Bob (Compliance Officer),2026-08-10 20:45:39
+DEC-2057,USR-1115,ENT-5415,63,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-07-19 20:45:39
+DEC-2058,USR-1145,ENT-5516,16,APPROVE,APPROVE,False,Standard baseline approval,Reviewer Alice (Security Lead),2026-08-19 20:45:39
+DEC-2059,USR-1187,ENT-5659,67,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-09 20:45:39
+DEC-2060,USR-1101,ENT-5370,69,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-08-06 20:45:39
+DEC-2061,USR-1088,ENT-5323,62,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Alice (Security Lead),2026-08-09 20:45:39
+DEC-2062,USR-1116,ENT-5420,60,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-08-13 20:45:39
+DEC-2063,USR-1026,ENT-5087,15,APPROVE,APPROVE,False,Standard baseline approval,Reviewer Carol (Access Admin),2026-07-07 20:45:39
+DEC-2064,USR-1111,ENT-5401,72,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-08-17 20:45:39
+DEC-2065,USR-1162,ENT-5577,57,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-21 20:45:39
+DEC-2066,USR-1102,ENT-5374,40,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-07-11 20:45:39
+DEC-2067,USR-1198,ENT-5696,52,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-08-11 20:45:39
+DEC-2068,USR-1187,ENT-5657,67,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-07-14 20:45:39
+DEC-2069,USR-1045,ENT-5159,13,APPROVE,APPROVE,False,Aligned with system recommendation,Reviewer Alice (Security Lead),2026-07-14 20:45:39
+DEC-2070,USR-1148,ENT-5530,70,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-08-07 20:45:39
+DEC-2071,USR-1164,ENT-5585,70,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-08-17 20:45:39
+DEC-2072,USR-1047,ENT-5168,12,APPROVE,APPROVE,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-08-03 20:45:39
+DEC-2073,USR-1129,ENT-5460,69,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-08-14 20:45:39
+DEC-2074,USR-1159,ENT-5565,66,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-08-14 20:45:39
+DEC-2075,USR-1039,ENT-5137,19,APPROVE,APPROVE,False,Standard baseline approval,Reviewer Alice (Security Lead),2026-08-03 20:45:39
+DEC-2076,USR-1028,ENT-5095,36,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-07-27 20:45:39
+DEC-2077,USR-1023,ENT-5078,14,APPROVE,APPROVE,False,Standard baseline approval,Reviewer Carol (Access Admin),2026-08-31 20:45:39
+DEC-2078,USR-1192,ENT-5677,45,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-07-14 20:45:39
+DEC-2079,USR-1186,ENT-5654,57,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-07-18 20:45:39
+DEC-2080,USR-1079,ENT-5285,29,APPROVE,APPROVE,False,Standard baseline approval,Reviewer Carol (Access Admin),2026-08-15 20:45:39
+DEC-2081,USR-1056,ENT-5198,43,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-31 20:45:39
+DEC-2082,USR-1133,ENT-5476,64,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-08-12 20:45:39
+DEC-2083,USR-1031,ENT-5107,35,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-08-25 20:45:39
+DEC-2084,USR-1188,ENT-5660,65,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-07-24 20:45:39
+DEC-2085,USR-1033,ENT-5113,11,APPROVE,APPROVE,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-08-31 20:45:39
+DEC-2086,USR-1028,ENT-5097,69,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-07-28 20:45:39
+DEC-2087,USR-1118,ENT-5427,20,APPROVE,APPROVE,False,Standard baseline approval,Reviewer Alice (Security Lead),2026-07-17 20:45:39
+DEC-2088,USR-1116,ENT-5417,49,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-07-16 20:45:39
+DEC-2089,USR-1003,ENT-5012,56,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Alice (Security Lead),2026-08-29 20:45:39
+DEC-2090,USR-1071,ENT-5253,74,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-17 20:45:39
+DEC-2091,USR-1188,ENT-5664,50,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-08-28 20:45:39
+DEC-2092,USR-1156,ENT-5553,23,APPROVE,APPROVE,False,Aligned with system recommendation,Reviewer Carol (Access Admin),2026-08-13 20:45:39
+DEC-2093,USR-1191,ENT-5674,37,REVIEW,REVIEW,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-08-05 20:45:39
+DEC-2094,USR-1195,ENT-5687,61,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-08-14 20:45:39
+DEC-2095,USR-1175,ENT-5624,49,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Alice (Security Lead),2026-08-06 20:45:39
+DEC-2096,USR-1181,ENT-5642,75,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-07-23 20:45:39
+DEC-2097,USR-1057,ENT-5202,75,REVOKE,APPROVE,True,Legacy manager verbal confirmation,Reviewer Bob (Compliance Officer),2026-09-02 20:45:39
+DEC-2098,USR-1037,ENT-5129,69,REVOKE,REVOKE,False,Aligned with system recommendation,Reviewer Bob (Compliance Officer),2026-08-07 20:45:39
+DEC-2099,USR-1106,ENT-5387,59,REVIEW,APPROVE,True,Legacy manager verbal confirmation,Reviewer Carol (Access Admin),2026-08-24 20:45:39
+DEC-2100,USR-1080,ENT-5289,12,APPROVE,APPROVE,False,Aligned with system recommendation,Reviewer Alice (Security Lead),2026-07-19 20:45:39
