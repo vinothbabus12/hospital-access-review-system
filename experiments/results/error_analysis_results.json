@@ -1,0 +1,234 @@
+{
+  "analysis_type": "Error and Disagreement Analysis (Simulated Stakeholder Validation)",
+  "methodology_statement": "This analysis evaluates discrepancies between automated evidence-based recommendations and simulated reviewer decisions. The validation is explicitly simulated and does not claim real hospital stakeholder feedback.",
+  "total_validation_cases": 25,
+  "agreement_count": 19,
+  "disagreement_count": 6,
+  "agreement_percentage": 76.0,
+  "disagreement_percentage": 24.0,
+  "disagreements_by_risk_level": {
+    "LOW": 2,
+    "MEDIUM": 4,
+    "HIGH": 0
+  },
+  "disagreements_by_staff_type": {
+    "Permanent Staff": 2,
+    "Visiting Consultant": 1,
+    "Intern": 1,
+    "Outsourced Technician": 2
+  },
+  "disagreements_by_system_recommendation": {
+    "APPROVE": 2,
+    "REVOKE": 0,
+    "MODIFY": 0,
+    "REVIEW": 4
+  },
+  "disagreements_by_reviewer_decision": {
+    "APPROVE": 4,
+    "REVOKE": 1,
+    "MODIFY": 1,
+    "REVIEW": 0
+  },
+  "disagreement_category_counts": {
+    "peer-group mismatch": 1,
+    "stale/incomplete data": 2,
+    "legitimate exception": 1,
+    "insufficient context": 1,
+    "unusual but valid usage": 1
+  },
+  "confusion_matrix": {
+    "APPROVE": {
+      "APPROVE": 7,
+      "REVOKE": 1,
+      "MODIFY": 1,
+      "REVIEW": 0,
+      "Total_System": 9
+    },
+    "REVOKE": {
+      "APPROVE": 0,
+      "REVOKE": 8,
+      "MODIFY": 0,
+      "REVIEW": 0,
+      "Total_System": 8
+    },
+    "MODIFY": {
+      "APPROVE": 0,
+      "REVOKE": 0,
+      "MODIFY": 0,
+      "REVIEW": 0,
+      "Total_System": 0
+    },
+    "REVIEW": {
+      "APPROVE": 4,
+      "REVOKE": 0,
+      "MODIFY": 0,
+      "REVIEW": 4,
+      "Total_System": 8
+    },
+    "Total_Reviewer": {
+      "APPROVE": 11,
+      "REVOKE": 9,
+      "MODIFY": 1,
+      "REVIEW": 4,
+      "Total_System": 25
+    }
+  },
+  "disagreement_cases": [
+    {
+      "validation_case_id": "VAL-005",
+      "user_id": "USR-1016",
+      "staff_type": "Permanent Staff",
+      "role": "Nurse",
+      "application": "Billing",
+      "permission": "WRITE",
+      "system_recommendation": "REVIEW",
+      "reviewer_decision": "APPROVE",
+      "risk_score": 40,
+      "risk_level": "MEDIUM",
+      "evidence_flags": [
+        "UNUSED_PRIVILEGE"
+      ],
+      "reviewer_reason": "Department Head clinician with administrative and teaching responsibilities; lower patient entry count than peers is expected.",
+      "disagreement_category": "peer-group mismatch",
+      "possible_rule_issue": "System baseline computes peer averages across all clinicians without title distinction.",
+      "suggested_improvement": "Introduce sub-role or administrative title segmentation within peer comparison groups.",
+      "root_cause_type": "B. Legitimate reviewer override"
+    },
+    {
+      "validation_case_id": "VAL-007",
+      "user_id": "USR-1003",
+      "staff_type": "Permanent Staff",
+      "role": "Doctor",
+      "application": "Billing",
+      "permission": "READ",
+      "system_recommendation": "APPROVE",
+      "reviewer_decision": "REVOKE",
+      "risk_score": 0,
+      "risk_level": "LOW",
+      "evidence_flags": [],
+      "reviewer_reason": "Staff member transferred from Emergency to Outpatient last week; legacy acute care permissions must be revoked.",
+      "disagreement_category": "stale/incomplete data",
+      "possible_rule_issue": "System depends on periodic HR batch synchronization which lags recent ward reassignments.",
+      "suggested_improvement": "Integrate real-time HR event webhooks for immediate ward reassignment and leave tracking.",
+      "root_cause_type": "D. Data-quality issue"
+    },
+    {
+      "validation_case_id": "VAL-009",
+      "user_id": "USR-1009",
+      "staff_type": "Visiting Consultant",
+      "role": "Consultant",
+      "application": "Pharmacy",
+      "permission": "WRITE",
+      "system_recommendation": "REVIEW",
+      "reviewer_decision": "APPROVE",
+      "risk_score": 40,
+      "risk_level": "MEDIUM",
+      "evidence_flags": [
+        "UNUSED_PRIVILEGE"
+      ],
+      "reviewer_reason": "Specialist consultant on bi-monthly on-call duty; sparse log frequency is standard for this contract.",
+      "disagreement_category": "legitimate exception",
+      "possible_rule_issue": "System evaluated access within a rigid 30-day window without considering bi-monthly specialty shifts.",
+      "suggested_improvement": "Add role-specific activity windows (e.g., 90-day evaluation for Visiting Consultants).",
+      "root_cause_type": "B. Legitimate reviewer override"
+    },
+    {
+      "validation_case_id": "VAL-015",
+      "user_id": "USR-1008",
+      "staff_type": "Intern",
+      "role": "Intern",
+      "application": "Radiology",
+      "permission": "ADMIN",
+      "system_recommendation": "REVIEW",
+      "reviewer_decision": "APPROVE",
+      "risk_score": 30,
+      "risk_level": "MEDIUM",
+      "evidence_flags": [
+        "HIGH_PRIVILEGE"
+      ],
+      "reviewer_reason": "Intern on approved two-week academic rotation leave returning next Monday; access should not be suspended.",
+      "disagreement_category": "stale/incomplete data",
+      "possible_rule_issue": "System depends on periodic HR batch synchronization which lags recent ward reassignments.",
+      "suggested_improvement": "Integrate real-time HR event webhooks for immediate ward reassignment and leave tracking.",
+      "root_cause_type": "D. Data-quality issue"
+    },
+    {
+      "validation_case_id": "VAL-020",
+      "user_id": "USR-1001",
+      "staff_type": "Outsourced Technician",
+      "role": "Doctor",
+      "application": "Laboratory",
+      "permission": "WRITE",
+      "system_recommendation": "APPROVE",
+      "reviewer_decision": "MODIFY",
+      "risk_score": 20,
+      "risk_level": "LOW",
+      "evidence_flags": [
+        "INACTIVE_USER"
+      ],
+      "reviewer_reason": "Vendor SLA contract was renegotiated to read-only diagnostics; WRITE permission should be downgraded.",
+      "disagreement_category": "insufficient context",
+      "possible_rule_issue": "Access logs showed valid technical usage, but contract scope was narrowed in procurement records.",
+      "suggested_improvement": "Incorporate Vendor Management System (VMS) contract metadata into entitlement risk scoring.",
+      "root_cause_type": "C. Missing context"
+    },
+    {
+      "validation_case_id": "VAL-025",
+      "user_id": "USR-1012",
+      "staff_type": "Outsourced Technician",
+      "role": "Pharmacist",
+      "application": "Administration",
+      "permission": "READ",
+      "system_recommendation": "REVIEW",
+      "reviewer_decision": "APPROVE",
+      "risk_score": 40,
+      "risk_level": "MEDIUM",
+      "evidence_flags": [
+        "UNUSED_PRIVILEGE"
+      ],
+      "reviewer_reason": "Technician ran automated end-of-month calibration batch scripts, causing usage deviation; verified as legitimate.",
+      "disagreement_category": "unusual but valid usage",
+      "possible_rule_issue": "System flagged high peer deviation caused by scheduled automated calibration batches.",
+      "suggested_improvement": "Exclude service-account and automated calibration batch runs from human user peer baselines.",
+      "root_cause_type": "E. Rule limitation"
+    }
+  ],
+  "rule_improvement_recommendations": [
+    {
+      "priority": "HIGH",
+      "area": "Peer Group Segmentation",
+      "observation": "Department Head clinicians were flagged for low usage because clinical peer groups grouped administrative leaders with full-time floor doctors.",
+      "recommendation": "Segment peer comparison baselines by administrative role flags (e.g., Department Head, Teaching Faculty vs Staff Clinician)."
+    },
+    {
+      "priority": "HIGH",
+      "area": "HR Synchronization Latency",
+      "observation": "Staff transferred to new departments retained old acute permissions that the system approved due to legacy usage in past 30 days.",
+      "recommendation": "Integrate real-time HR transfer webhooks to trigger immediate automated deprovisioning of departed ward entitlements."
+    },
+    {
+      "priority": "MEDIUM",
+      "area": "Multi-Cadence Evaluation Windows",
+      "observation": "Visiting Consultants and on-call surgeons operate on bi-monthly schedules, causing false-positive dormancy flags under 30-day lookback.",
+      "recommendation": "Implement configurable evaluation lookback windows (e.g., 90-day evaluation for Visiting Consultants vs 30 days for permanent staff)."
+    },
+    {
+      "priority": "MEDIUM",
+      "area": "Academic & Leave Calendar Ingestion",
+      "observation": "Interns on mandatory academic examination leave were flagged for inactivity despite scheduled return.",
+      "recommendation": "Ingest hospital residency rotation schedules and approved academic leave data into the evidence engine."
+    },
+    {
+      "priority": "MEDIUM",
+      "area": "Vendor Contract Scope Metadata",
+      "observation": "Contractor permissions were approved by system based on access history, despite procurement contract narrowing.",
+      "recommendation": "Connect Vendor Management System (VMS) contract scope flags to automatically downgrade third-party entitlements upon SLA change."
+    },
+    {
+      "priority": "LOW",
+      "area": "Automated Batch Task Filtering",
+      "observation": "Technicians executing scheduled end-of-month batch calibration runs had inflated usage flags.",
+      "recommendation": "Distinguish between automated batch script executions and interactive user sessions when computing peer usage distributions."
+    }
+  ]
+}

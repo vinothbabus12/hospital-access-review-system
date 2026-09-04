@@ -1,0 +1,312 @@
+{
+  "E1": {
+    "scenario_id": "E1",
+    "total_cases": 707,
+    "affected_cases": 273,
+    "risk_score_stats": {
+      "avg": 20.69,
+      "min": 0,
+      "max": 90
+    },
+    "risk_counts": {
+      "LOW": 434,
+      "MEDIUM": 224,
+      "HIGH": 49
+    },
+    "UNUSED_PRIVILEGE": 203,
+    "HIGH_PRIVILEGE": 230,
+    "LOW_USAGE_VS_PEERS": 0,
+    "HIGH_USAGE_VS_PEERS": 2,
+    "INACTIVE_USER": 117,
+    "recommendation_counts": {
+      "APPROVE": 434,
+      "REVIEW": 224,
+      "REVOKE": 49,
+      "MODIFY": 0
+    },
+    "validation_errors": 25,
+    "duplicate_events_detected": 173,
+    "delayed_events_detected": 266,
+    "out_of_order_events_handled": 5170,
+    "processing_success": true
+  },
+  "E2": {
+    "scenario_id": "E2",
+    "total_cases": 712,
+    "affected_cases": 278,
+    "risk_score_stats": {
+      "avg": 20.83,
+      "min": 0,
+      "max": 90
+    },
+    "risk_counts": {
+      "LOW": 434,
+      "MEDIUM": 229,
+      "HIGH": 49
+    },
+    "UNUSED_PRIVILEGE": 208,
+    "HIGH_PRIVILEGE": 230,
+    "LOW_USAGE_VS_PEERS": 0,
+    "HIGH_USAGE_VS_PEERS": 2,
+    "INACTIVE_USER": 117,
+    "recommendation_counts": {
+      "APPROVE": 434,
+      "REVIEW": 229,
+      "REVOKE": 49,
+      "MODIFY": 0
+    },
+    "validation_errors": 25,
+    "duplicate_events_detected": 173,
+    "delayed_events_detected": 266,
+    "out_of_order_events_handled": 5170,
+    "processing_success": true
+  },
+  "E3": {
+    "scenario_id": "E3",
+    "total_cases": 710,
+    "affected_cases": 276,
+    "risk_score_stats": {
+      "avg": 20.9,
+      "min": 0,
+      "max": 90
+    },
+    "risk_counts": {
+      "LOW": 434,
+      "MEDIUM": 224,
+      "HIGH": 52
+    },
+    "UNUSED_PRIVILEGE": 206,
+    "HIGH_PRIVILEGE": 233,
+    "LOW_USAGE_VS_PEERS": 0,
+    "HIGH_USAGE_VS_PEERS": 2,
+    "INACTIVE_USER": 117,
+    "recommendation_counts": {
+      "APPROVE": 434,
+      "REVIEW": 224,
+      "REVOKE": 52,
+      "MODIFY": 0
+    },
+    "validation_errors": 25,
+    "duplicate_events_detected": 173,
+    "delayed_events_detected": 266,
+    "out_of_order_events_handled": 5170,
+    "processing_success": true
+  },
+  "E4": {
+    "scenario_id": "E4",
+    "total_cases": 707,
+    "affected_cases": 274,
+    "risk_score_stats": {
+      "avg": 21.15,
+      "min": 0,
+      "max": 90
+    },
+    "risk_counts": {
+      "LOW": 433,
+      "MEDIUM": 221,
+      "HIGH": 53
+    },
+    "UNUSED_PRIVILEGE": 203,
+    "HIGH_PRIVILEGE": 230,
+    "LOW_USAGE_VS_PEERS": 0,
+    "HIGH_USAGE_VS_PEERS": 2,
+    "INACTIVE_USER": 133,
+    "recommendation_counts": {
+      "APPROVE": 433,
+      "REVIEW": 221,
+      "REVOKE": 53,
+      "MODIFY": 0
+    },
+    "validation_errors": 25,
+    "duplicate_events_detected": 173,
+    "delayed_events_detected": 266,
+    "out_of_order_events_handled": 5170,
+    "processing_success": true
+  },
+  "E5": {
+    "scenario_id": "E5",
+    "total_cases": 707,
+    "affected_cases": 278,
+    "risk_score_stats": {
+      "avg": 20.98,
+      "min": 0,
+      "max": 90
+    },
+    "risk_counts": {
+      "LOW": 429,
+      "MEDIUM": 229,
+      "HIGH": 49
+    },
+    "UNUSED_PRIVILEGE": 208,
+    "HIGH_PRIVILEGE": 230,
+    "LOW_USAGE_VS_PEERS": 0,
+    "HIGH_USAGE_VS_PEERS": 2,
+    "INACTIVE_USER": 117,
+    "recommendation_counts": {
+      "APPROVE": 429,
+      "REVIEW": 229,
+      "REVOKE": 49,
+      "MODIFY": 0
+    },
+    "validation_errors": 25,
+    "duplicate_events_detected": 171,
+    "delayed_events_detected": 260,
+    "out_of_order_events_handled": 5103,
+    "processing_success": true
+  },
+  "E6": {
+    "scenario_id": "E6",
+    "total_cases": 707,
+    "affected_cases": 273,
+    "risk_score_stats": {
+      "avg": 20.69,
+      "min": 0,
+      "max": 90
+    },
+    "risk_counts": {
+      "LOW": 434,
+      "MEDIUM": 224,
+      "HIGH": 49
+    },
+    "UNUSED_PRIVILEGE": 203,
+    "HIGH_PRIVILEGE": 230,
+    "LOW_USAGE_VS_PEERS": 0,
+    "HIGH_USAGE_VS_PEERS": 2,
+    "INACTIVE_USER": 117,
+    "recommendation_counts": {
+      "APPROVE": 434,
+      "REVIEW": 224,
+      "REVOKE": 49,
+      "MODIFY": 0
+    },
+    "validation_errors": 25,
+    "duplicate_events_detected": 203,
+    "delayed_events_detected": 266,
+    "out_of_order_events_handled": 5170,
+    "processing_success": true
+  },
+  "E7": {
+    "scenario_id": "E7",
+    "total_cases": 707,
+    "affected_cases": 273,
+    "risk_score_stats": {
+      "avg": 20.69,
+      "min": 0,
+      "max": 90
+    },
+    "risk_counts": {
+      "LOW": 434,
+      "MEDIUM": 224,
+      "HIGH": 49
+    },
+    "UNUSED_PRIVILEGE": 203,
+    "HIGH_PRIVILEGE": 230,
+    "LOW_USAGE_VS_PEERS": 0,
+    "HIGH_USAGE_VS_PEERS": 2,
+    "INACTIVE_USER": 117,
+    "recommendation_counts": {
+      "APPROVE": 434,
+      "REVIEW": 224,
+      "REVOKE": 49,
+      "MODIFY": 0
+    },
+    "validation_errors": 25,
+    "duplicate_events_detected": 178,
+    "delayed_events_detected": 266,
+    "out_of_order_events_handled": 5170,
+    "processing_success": true
+  },
+  "E8": {
+    "scenario_id": "E8",
+    "total_cases": 707,
+    "affected_cases": 273,
+    "risk_score_stats": {
+      "avg": 20.69,
+      "min": 0,
+      "max": 90
+    },
+    "risk_counts": {
+      "LOW": 434,
+      "MEDIUM": 224,
+      "HIGH": 49
+    },
+    "UNUSED_PRIVILEGE": 203,
+    "HIGH_PRIVILEGE": 230,
+    "LOW_USAGE_VS_PEERS": 0,
+    "HIGH_USAGE_VS_PEERS": 2,
+    "INACTIVE_USER": 117,
+    "recommendation_counts": {
+      "APPROVE": 434,
+      "REVIEW": 224,
+      "REVOKE": 49,
+      "MODIFY": 0
+    },
+    "validation_errors": 25,
+    "duplicate_events_detected": 173,
+    "delayed_events_detected": 271,
+    "out_of_order_events_handled": 5170,
+    "processing_success": true
+  },
+  "E9": {
+    "scenario_id": "E9",
+    "total_cases": 707,
+    "affected_cases": 273,
+    "risk_score_stats": {
+      "avg": 20.69,
+      "min": 0,
+      "max": 90
+    },
+    "risk_counts": {
+      "LOW": 434,
+      "MEDIUM": 224,
+      "HIGH": 49
+    },
+    "UNUSED_PRIVILEGE": 203,
+    "HIGH_PRIVILEGE": 230,
+    "LOW_USAGE_VS_PEERS": 0,
+    "HIGH_USAGE_VS_PEERS": 2,
+    "INACTIVE_USER": 117,
+    "recommendation_counts": {
+      "APPROVE": 434,
+      "REVIEW": 224,
+      "REVOKE": 49,
+      "MODIFY": 0
+    },
+    "validation_errors": 25,
+    "duplicate_events_detected": 173,
+    "delayed_events_detected": 266,
+    "out_of_order_events_handled": 5171,
+    "processing_success": true
+  },
+  "E10": {
+    "scenario_id": "E10",
+    "total_cases": 707,
+    "affected_cases": 273,
+    "risk_score_stats": {
+      "avg": 20.69,
+      "min": 0,
+      "max": 90
+    },
+    "risk_counts": {
+      "LOW": 434,
+      "MEDIUM": 224,
+      "HIGH": 49
+    },
+    "UNUSED_PRIVILEGE": 203,
+    "HIGH_PRIVILEGE": 230,
+    "LOW_USAGE_VS_PEERS": 0,
+    "HIGH_USAGE_VS_PEERS": 2,
+    "INACTIVE_USER": 117,
+    "recommendation_counts": {
+      "APPROVE": 434,
+      "REVIEW": 224,
+      "REVOKE": 49,
+      "MODIFY": 0
+    },
+    "validation_errors": 27,
+    "duplicate_events_detected": 173,
+    "delayed_events_detected": 266,
+    "out_of_order_events_handled": 5170,
+    "processing_success": true
+  }
+}

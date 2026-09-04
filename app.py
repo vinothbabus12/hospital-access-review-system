@@ -25,6 +25,14 @@ from src.evidence_engine import evaluate_all_entitlements, generate_evidence_rec
 from src.risk_engine import get_risk_summary, get_high_risk_privileges_by_role, evaluate_risk
 from src.audit import record_reviewer_decision, get_audit_trail
 from src.baseline import run_baseline_experiment
+from experiments.before_after_analysis import (
+    load_experiment_inputs,
+    calculate_before_after_metrics,
+    create_approval_rate_chart,
+    create_decision_distribution_chart,
+    create_risk_distribution_chart,
+    create_scenario_comparison_chart
+)
 
 # Configure Streamlit page layout
 st.set_page_config(
@@ -208,11 +216,17 @@ def render_evidence_card(row):
 if page == "1. Dashboard":
     st.markdown('<div class="main-header">🏥 Executive Access Review Dashboard</div>', unsafe_allow_html=True)
     st.markdown('<div class="sub-header">Overview of hospital staff access privileges, usage baselines, and risk metrics</div>', unsafe_allow_html=True)
+    # Short explanation
+    st.info("Evidence-based access review replaces blanket approval by combining usage history, peer‑role comparison, privilege level, and user status.")
 
     summary = get_risk_summary(df_evaluated)
 
-    # 6 Required Top Metric Cards
-    c1, c2, c3, c4, c5, c6 = st.columns(6)
+    # Retrieve completed decisions count from audit trail
+    audit_df = get_audit_trail()
+    completed_decisions = len(audit_df) if audit_df is not None else 0
+
+    # 7 Required Top Metric Cards (added Completed Decisions)
+    c1, c2, c3, c4, c5, c6, c7 = st.columns(7)
     with c1:
         st.metric("Total Users", f"{summary['total_users']:,}")
     with c2:
@@ -225,6 +239,8 @@ if page == "1. Dashboard":
         st.metric("Unused Privileges", f"{summary['unused_count']:,}")
     with c6:
         st.metric("Pending Reviews", f"{summary['pending_reviews']:,}")
+    with c7:
+        st.metric("Completed Decisions", f"{completed_decisions:,}")
 
     st.markdown("---")
 
@@ -367,6 +383,11 @@ elif page == "3. Evidence Details":
         row = df_evaluated[df_evaluated["entitlement_id"] == sel_ent_id].iloc[0]
 
         render_evidence_card(row)
+        # Added explanation of why this entitlement was flagged based on evidence metrics
+        st.subheader("🔎 Why was this entitlement flagged?")
+        st.write(f"- **Risk Score:** {row['risk_score']} (higher indicates greater risk)")
+        st.write(f"- **System Recommendation:** `{row['recommendation']}`")
+        st.write(f"- **Risk Level:** {row['risk_level']}")
 
 
 # ====================================================
@@ -531,6 +552,9 @@ elif page == "5. Audit Trail":
 
         st.write(f"Showing **{len(view_audit_df)}** matching audit entries (newest decisions listed first).")
         st.dataframe(view_audit_df, use_container_width=True)
+    # CSV download button for filtered audit trail
+    csv = filtered_audit.to_csv(index=False).encode('utf-8')
+    st.download_button(label="Download CSV", data=csv, file_name='audit_trail_filtered.csv', mime='text/csv')
 
 
 # ====================================================
@@ -558,6 +582,9 @@ elif page == "6. Data Quality":
 
     st.markdown("---")
     st.subheader("Data Cleaning Summary")
+    # Failure Handling & Recovery subsection
+    st.subheader("Failure Handling & Recovery")
+    st.write("- **Delayed Events**: Events arriving later than expected timestamps are re‑ordered correctly.\n- **Duplicate Events**: Duplicates are identified and removed without affecting usage stats.\n- **Out‑of‑Order Events**: Chronological normalization ensures accurate baseline counters.\n- **Invalid Events**: Missing IDs or malformed timestamps are flagged and excluded safely.")
     st.write("• **Deduplication:** Dropped duplicate `event_id` and duplicate payload events without double-counting usage statistics.")
     st.write("• **Corrupt Record Protection:** Flagged missing user IDs and bad timestamp strings safely without crashing pipeline.")
     st.write("• **Chronological Normalization:** Re-ordered valid log events strictly by `event_timestamp` to maintain accurate baseline counters.")
@@ -572,60 +599,81 @@ elif page == "7. Baseline Comparison":
 
     exp_res = run_baseline_experiment(df_evaluated)
 
-    # Key Metric Cards (Primary Project Metric)
-    bc1, bc2, bc3, bc4 = st.columns(4)
-    with bc1:
-        st.metric("Baseline Blanket Approval Rate", f"{exp_res['baseline_blanket_approval_rate']}%")
-    with bc2:
-        st.metric("Prototype Blanket Approval Rate", f"{exp_res['prototype_blanket_approval_rate']}%")
-    with bc3:
-        st.metric("Blanket Approval Reduction (Primary Metric)", f"{exp_res['reduction_percentage_points']} pp", delta=f"-{exp_res['reduction_percentage_points']} pp", delta_color="normal")
-    with bc4:
-        st.metric("Relative Reduction (%)", f"{exp_res['relative_reduction']}%", delta=f"-{exp_res['relative_reduction']}%", delta_color="normal")
+    # Load actual calculated before/after metrics
+    ba_inputs = load_experiment_inputs()
+    ba_metrics = calculate_before_after_metrics(ba_inputs)
+
+    # ----------------------------------------------------
+    # MEASURED IMPACT SUMMARY SECTION
+    # ----------------------------------------------------
+    st.markdown("---")
+    st.subheader("🎯 Measured Impact")
+    # Explicit statement about reduction
+    st.write(f"The prototype reduces approvals by **{ba_metrics['approval_rate_reduction_percentage_points']} pp** (baseline **{ba_metrics['baseline_approval_rate']}%** → prototype **{ba_metrics['prototype_approval_rate']}%**).")
+    # Show prototype decision breakdown counts
+    st.write(f"Prototype Decision Distribution: APPROVE={ba_metrics.get('prototype_approvals', 'N/A')}, REVOKE={ba_metrics.get('prototype_revocations', 'N/A')}, MODIFY={ba_metrics.get('prototype_modifications', 'N/A')}")
+    st.caption("Quantitative reduction in approvals from evidence-based automation vs spreadsheet baseline.")
+
+    mi1, mi2, mi3, mi4, mi5 = st.columns(5)
+    with mi1:
+        st.metric("Baseline Approval Rate", f"{ba_metrics['baseline_approval_rate']}%")
+    with mi2:
+        st.metric("Evidence-Based Approval Rate", f"{ba_metrics['prototype_approval_rate']}%")
+    with mi3:
+        st.metric(
+            "Reduction (Percentage Points)",
+            f"{ba_metrics['approval_rate_reduction_percentage_points']} pp",
+            delta=f"-{ba_metrics['approval_rate_reduction_percentage_points']} pp",
+            delta_color="normal"
+        )
+    with mi4:
+        st.metric(
+            "Relative Reduction",
+            f"{ba_metrics['relative_approval_rate_reduction']}%",
+            delta=f"-{ba_metrics['relative_approval_rate_reduction']}%",
+            delta_color="normal"
+        )
+    with mi5:
+        st.metric("Total Cases Evaluated", f"{ba_metrics['total_cases']:,}")
+
+    # Mandatory Methodology Disclaimer
+    st.info(
+        "ℹ️ **Methodology Note:** This comparison uses controlled synthetic hospital access-review data. "
+        "The baseline represents a simulated spreadsheet-style review approach and does not represent historical hospital data."
+    )
+
+    # ----------------------------------------------------
+    # VISUALIZATIONS SECTION (4 REQUIRED CHARTS)
+    # ----------------------------------------------------
+    st.markdown("---")
+    st.subheader("📉 Experiment Visualization Charts")
+
+    v_row1_col1, v_row1_col2 = st.columns(2)
+    with v_row1_col1:
+        # Chart 1: Baseline vs Prototype Approval Rate
+        fig_approval = create_approval_rate_chart(ba_metrics)
+        st.plotly_chart(fig_approval, use_container_width=True)
+
+    with v_row1_col2:
+        # Chart 2: Prototype Decision Distribution
+        fig_decisions = create_decision_distribution_chart(ba_metrics)
+        st.plotly_chart(fig_decisions, use_container_width=True)
+
+    v_row2_col1, v_row2_col2 = st.columns(2)
+    with v_row2_col1:
+        # Chart 3: Risk Distribution
+        fig_risk = create_risk_distribution_chart(ba_metrics)
+        st.plotly_chart(fig_risk, use_container_width=True)
+
+    with v_row2_col2:
+        # Chart 4: Expanded Experiment Scenario Comparison (E1 to E10)
+        fig_scenarios = create_scenario_comparison_chart(ba_inputs.get("expanded", {}))
+        st.plotly_chart(fig_scenarios, use_container_width=True)
 
     st.markdown("---")
     st.subheader("📊 Before-vs-After Comparison Table")
     st.write("All metrics calculated dynamically from the actual generated dataset.")
     st.dataframe(exp_res["summary_df"], use_container_width=True)
-
-    st.markdown("---")
-    st.subheader("📉 Experiment Visualization Charts")
-
-    c_col1, c_col2 = st.columns(2)
-
-    with c_col1:
-        # Chart 1: Blanket Approval Rate Comparison (Baseline vs Prototype)
-        chart_data1 = pd.DataFrame([
-            {"Approach": "Baseline (Spreadsheet)", "Blanket Approval Rate (%)": exp_res["baseline_blanket_approval_rate"]},
-            {"Approach": "Prototype (Evidence-Based)", "Blanket Approval Rate (%)": exp_res["prototype_blanket_approval_rate"]}
-        ])
-        fig_blanket = px.bar(
-            chart_data1, x="Approach", y="Blanket Approval Rate (%)",
-            color="Approach", color_discrete_map={"Baseline (Spreadsheet)": "#EF4444", "Prototype (Evidence-Based)": "#10B981"},
-            title="Primary Metric: Blanket Approval Rate Reduction",
-            text_auto=True
-        )
-        st.plotly_chart(fig_blanket, use_container_width=True)
-
-    with c_col2:
-        # Chart 2: Decision Outcome Distribution (Baseline vs Prototype)
-        case_df = exp_res["case_details_df"]
-        if not case_df.empty:
-            base_counts = case_df["baseline_decision"].value_counts().reset_index()
-            base_counts.columns = ["Decision", "Count"]
-            base_counts["Approach"] = "Baseline (Spreadsheet)"
-
-            proto_counts = case_df["prototype_decision"].value_counts().reset_index()
-            proto_counts.columns = ["Decision", "Count"]
-            proto_counts["Approach"] = "Prototype (Evidence-Based)"
-
-            combined_outcomes = pd.concat([base_counts, proto_counts])
-            fig_outcomes = px.bar(
-                combined_outcomes, x="Approach", y="Count", color="Decision",
-                barmode="group", title="Decision Breakdown Comparison Across Approaches",
-                color_discrete_map={"APPROVE": "#10B981", "REVOKE": "#EF4444", "MODIFY": "#F59E0B"}
-            )
-            st.plotly_chart(fig_outcomes, use_container_width=True)
 
     st.markdown("---")
     st.subheader("📋 Role-Level Baseline Metrics & Usage Distribution")

@@ -1,0 +1,13 @@
+{
+  "total_cases": 707,
+  "baseline_approvals": 590,
+  "baseline_approval_rate": 83.5,
+  "prototype_approvals": 434,
+  "prototype_approval_rate": 61.4,
+  "baseline_blanket_approvals": 590,
+  "baseline_blanket_approval_rate": 83.5,
+  "prototype_blanket_approvals": 0,
+  "prototype_blanket_approval_rate": 0.0,
+  "reduction_percentage_points": 22.1,
+  "relative_reduction": 26.5
+}

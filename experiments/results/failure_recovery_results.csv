@@ -1,0 +1,6 @@
+scenario_id,total_events,duplicate_events,invalid_events,delayed_events,out_of_order_events,valid_events
+F1,5405,178,25,266,5170,5202
+F2,5405,178,25,266,5170,5202
+F3,5400,173,25,266,5174,5202
+F4,5402,173,27,266,5170,5202
+F5,5406,179,25,266,5170,5202

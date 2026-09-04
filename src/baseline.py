@@ -86,10 +86,10 @@ def run_baseline_experiment(df_evaluated):
     prototype_blanket_approval_rate = round((prototype_blanket_count / total_cases) * 100.0, 1)
 
     # 3. STATISTICAL REDUCTION METRICS
-    reduction_pp = round(baseline_blanket_approval_rate - prototype_blanket_approval_rate, 1)
+    reduction_pp = round(baseline_approval_rate - prototype_approval_rate, 1)
 
-    if baseline_blanket_approval_rate > 0:
-        relative_reduction = round((reduction_pp / baseline_blanket_approval_rate) * 100.0, 1)
+    if baseline_approval_rate > 0:
+        relative_reduction = round((reduction_pp / baseline_approval_rate) * 100.0, 1)
     else:
         relative_reduction = 0.0
 

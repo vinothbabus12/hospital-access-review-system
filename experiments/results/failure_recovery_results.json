@@ -1,0 +1,68 @@
+{
+  "F1": {
+    "scenario_id": "F1",
+    "input_records": 5405,
+    "duplicate_records": 5,
+    "quality_summary": {
+      "total_events": 5405,
+      "duplicate_events": 178,
+      "invalid_events": 25,
+      "delayed_events": 266,
+      "out_of_order_events": 5170,
+      "valid_events": 5202
+    }
+  },
+  "F2": {
+    "scenario_id": "F2",
+    "input_records": 5405,
+    "delayed_records": 5,
+    "quality_summary": {
+      "total_events": 5405,
+      "duplicate_events": 178,
+      "invalid_events": 25,
+      "delayed_events": 266,
+      "out_of_order_events": 5170,
+      "valid_events": 5202
+    }
+  },
+  "F3": {
+    "scenario_id": "F3",
+    "input_records": 5400,
+    "out_of_order_records": 198,
+    "quality_summary": {
+      "total_events": 5400,
+      "duplicate_events": 173,
+      "invalid_events": 25,
+      "delayed_events": 266,
+      "out_of_order_events": 5174,
+      "valid_events": 5202
+    }
+  },
+  "F4": {
+    "scenario_id": "F4",
+    "input_records": 5402,
+    "invalid_records": 2,
+    "quality_summary": {
+      "total_events": 5402,
+      "duplicate_events": 173,
+      "invalid_events": 27,
+      "delayed_events": 266,
+      "out_of_order_events": 5170,
+      "valid_events": 5202
+    }
+  },
+  "F5": {
+    "scenario_id": "F5",
+    "input_records": 5406,
+    "duplicate_records": 3,
+    "delayed_records": 3,
+    "quality_summary": {
+      "total_events": 5406,
+      "duplicate_events": 179,
+      "invalid_events": 25,
+      "delayed_events": 266,
+      "out_of_order_events": 5170,
+      "valid_events": 5202
+    }
+  }
+}
