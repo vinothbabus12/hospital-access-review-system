@@ -238,6 +238,11 @@ python check_project.py
 | [STAKEHOLDER_VALIDATION.md](docs/STAKEHOLDER_VALIDATION.md) | Simulated stakeholder validation |
 | [ERROR_ANALYSIS.md](docs/ERROR_ANALYSIS.md) | Error analysis and edge cases |
 | [FAILURE_RECOVERY.md](docs/FAILURE_RECOVERY.md) | Failure scenario testing and recovery |
+| [RISK_REGISTER.md](docs/RISK_REGISTER.md) | Risk register and mitigation strategies |
+| [REPRODUCIBILITY.md](docs/REPRODUCIBILITY.md) | Reproducibility documentation |
+| [DEMO_GUIDE.md](docs/DEMO_GUIDE.md) | Evaluator demonstration guide |
+| [PROJECT_SUMMARY.md](docs/PROJECT_SUMMARY.md) | Evaluator project summary |
+| [USER_GUIDE.md](docs/USER_GUIDE.md) | User guide for the application |
 
 ---
 
@@ -253,7 +258,20 @@ This project is an **MVP prototype** built for an industry challenge. The follow
 
 ---
 
-## 16. Project Structure
+## 16. Future Work
+
+1. **Real stakeholder validation** — Conduct usability and acceptance testing with hospital Security Officers, Department Managers, and IT Auditors.
+2. **Real data validation** — Test with anonymized real hospital access logs to validate risk weights and peer baselines.
+3. **IAM/HR/VMS integration** — Connect to hospital identity and workforce management systems for real-time user status and entitlement data.
+4. **Authentication and RBAC** — Implement role-based access control with SSO/SAML integration.
+5. **Production security** — Add encryption, privacy controls, and secure audit storage.
+6. **Monitoring and alerting** — Implement operational monitoring for data pipeline health, event lag, and decision throughput.
+7. **Multi-level approval** — Support escalation workflows for high-risk entitlements.
+8. **Continuous review** — Move from periodic batch review to continuous, event-driven access monitoring.
+
+---
+
+## 17. Project Structure
 
 ```text
 hospital-access-review/
@@ -272,12 +290,17 @@ hospital-access-review/
 │   ├── ARCHITECTURE.md
 │   ├── BASELINE_COMPARISON.md
 │   ├── BEFORE_AFTER_ANALYSIS.md
+│   ├── DEMO_GUIDE.md
 │   ├── ERROR_ANALYSIS.md
 │   ├── EXPERIMENT_RESULTS.md
 │   ├── FAILURE_RECOVERY.md
+│   ├── PROJECT_SUMMARY.md
 │   ├── QUANTITATIVE_BASELINE.md
+│   ├── REPRODUCIBILITY.md
+│   ├── RISK_REGISTER.md
 │   ├── STAKEHOLDER_VALIDATION.md
-│   └── TESTING.md
+│   ├── TESTING.md
+│   └── USER_GUIDE.md
 ├── experiments/                    # Experiment scripts
 │   ├── baseline_experiment.py
 │   ├── before_after_analysis.py

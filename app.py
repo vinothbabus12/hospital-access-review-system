@@ -552,9 +552,9 @@ elif page == "5. Audit Trail":
 
         st.write(f"Showing **{len(view_audit_df)}** matching audit entries (newest decisions listed first).")
         st.dataframe(view_audit_df, use_container_width=True)
-    # CSV download button for filtered audit trail
-    csv = filtered_audit.to_csv(index=False).encode('utf-8')
-    st.download_button(label="Download CSV", data=csv, file_name='audit_trail_filtered.csv', mime='text/csv')
+        # CSV download button for filtered audit trail
+        csv = filtered_audit.to_csv(index=False).encode('utf-8')
+        st.download_button(label="Download CSV", data=csv, file_name='audit_trail_filtered.csv', mime='text/csv')
 
 
 # ====================================================

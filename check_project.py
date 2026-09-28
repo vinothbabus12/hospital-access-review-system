@@ -159,8 +159,8 @@ try:
     assert 0 <= exp["prototype_blanket_approval_rate"] <= 100
     results["WORKING"].append(
         f"BASELINE EXPERIMENT: OK (total={exp['total_cases']}, "
-        f"baseline={exp['baseline_blanket_approval_rate']}%, "
-        f"prototype={exp['prototype_blanket_approval_rate']}%, "
+        f"overall_approval: baseline={exp['baseline_approval_rate']}% prototype={exp['prototype_approval_rate']}%, "
+        f"blanket_approval: baseline={exp['baseline_blanket_approval_rate']}% prototype={exp['prototype_blanket_approval_rate']}%, "
         f"reduction={exp['reduction_percentage_points']}pp)"
     )
 except Exception as e:
